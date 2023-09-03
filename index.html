@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/swiper.css"/>
   </head>
   <body>
     <header>
@@ -96,11 +97,49 @@
       </div>    
     
     </header>
-    <div style="width: 100vw; height: 2000px; background-color: blueviolet;"></div>
+    <main>
+      <div class="banner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">             
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>        
+    </main>
+    <div style="height: 200vh;background-color: blue;"></div>
     
    
 
 
     <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        slidesPerView: "auto",
+        rewind: true,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
   </body>
 </html>
