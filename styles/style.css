@@ -148,6 +148,37 @@ header{
   animation: fadeInDown 0.25s forwards;
 }
 
+.show-more-menu {
+  position: relative;
+}
+
+.show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 23px;
+  list-style: none;
+  width: 200px;  
+  display: none;
+}
+
+.show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+
+
 
 @keyframes fadeInDown {
   0% {
@@ -159,6 +190,15 @@ header{
     transform: translateY(0);
   }
 }
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   header{
       width: 940px;
