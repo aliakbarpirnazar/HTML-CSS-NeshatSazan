@@ -184,8 +184,6 @@ header{
   padding: 2px;  
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
-
 }
 
 .swiper {
