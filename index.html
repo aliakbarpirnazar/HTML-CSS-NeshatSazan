@@ -141,11 +141,93 @@
       </div>
     </section>
 
+    <section class="container">
+        <div class="container-text">
+          <div class="title-text">
+            <h3 >آخرین‌اخبار</h3>
+          </div>
+          <div class="swiper mySwiper-news-text">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="date-link">
+                  <p>21</p>
+                  <p>فروردین</p>
+                </div>
+                <div class="title-news">
+                  <h3>
+                    بازدید رئیس دفتر محترم استاندارد از پروژه نشاط 4 (15 آذر 99)
+                  </h3>
+                </div>
+                <div class="des-news">
+                  <p>
+                    مشارکت کنندگان محترم در فاز دوم پروژه نشاط 2 با توجه به اینکه برخی مصالحی و دستمزد به نس
+                  </p>
+                </div>
+                <!-- <div>button1</div>       -->
+              </div>
+              <div class="swiper-slide">
+                <div class="date-link">
+                  <p>22</p>
+                  <p>فروردین</p>
+                </div>
+                <div class="title-news">
+                  <h3>
+                    بازدید رئیس دفتر محترم استاندارد از پروژه نشاط 4 (15 آذر 99)
+                  </h3>
+                </div>
+                <div class="des-news">
+                  <p>
+                    مشارکت کنندگان محترم در فاز دوم پروژه نشاط 2 با توجه به اینکه برخی مصالحی و دستمزد به نس
+                  </p>
+                </div>
+                <!-- <div>button2</div>       -->
+              </div>
+              <div class="swiper-slide">
+                <div class="date-link">
+                  <p>23</p>
+                  <p>فروردین</p>
+                </div>
+                <div class="title-news">
+                  <h3>
+                    بازدید رئیس دفتر محترم استاندارد از پروژه نشاط 4 (15 آذر 99)
+                  </h3>
+                </div>
+                <div class="des-news">
+                  <p>
+                    مشارکت کنندگان محترم در فاز دوم پروژه نشاط 2 با توجه به اینکه برخی مصالحی و دستمزد به نس
+                  </p>
+                </div>
+                <!-- <div>button3</div>       -->
+              </div>                            
+            </div>
+          </div>         
+          <div class="news-button">
+            <div class="news-links">
+              <a href="#" class="second-button">مشاهده همه خبر ها
+                <img src="./images/arrow.svg" />
+              </a>
+            </div>
+            <div class="arrow-function">
+              <div class="news-button-next">
+                <img src="./images/cursor-right-svgrepo-com.svg"></img>
+              </div>
+              <div class="news-button-prev">
+                <img src="./images/cursor-left-svgrepo-com.svg"></img>
+              </div>
+            </div>
 
-
-
-    
-	
+          </div> 
+        </div>
+        <div class="container-img">
+          <div class="swiper-card mySwiper-news-img">            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-card">Slide 1</div>
+              <div class="swiper-slide swiper-slide-card">Slide 2</div>
+              <div class="swiper-slide swiper-slide-card">Slide 3</div>              
+            </div>
+          </div>
+        </div>
+    </section>
 
 
 
@@ -185,13 +267,29 @@
         autoplay:{
           delay:5000,
           reversDirection:true,
-        },
+        },loop: true,
       });
     </script>
      <script>
-      var swiper = new Swiper(".mySwiper-card", {
-        effect: "cards",
+     
+    </script>
+     <script>
+       var swiper = new Swiper(".mySwiper-news-img", {
+        effect: "cards",       
         grabCursor: true,
+        navigation: {
+          nextEl: ".news-button-next",
+          prevEl: ".news-button-prev",
+        },allowTouchMove:false,
+        direction:"vertical",
+        loop: true,       
+      });
+      var swiper1 = new Swiper(".mySwiper-news-text", {      
+        navigation: {
+          nextEl: ".news-button-next",
+          prevEl: ".news-button-prev",
+        },allowTouchMove:false,
+        loop: true,
       });
     </script>
 
