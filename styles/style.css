@@ -459,11 +459,98 @@ header{
 }
 
 .statistics{
-  width: 1170px;
-  
+  padding: 20px 0 1px 0;
+  margin: 40px 0 0 0 ;
+  background-color: #f68b1f;
+  height: 150px;
+}
+.stat-list{  
+  width: 1170px; 
+  display: flex;
+  margin: auto;
+}
+.stat-or{
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  margin: 15px;
+  height: 100%;
+}
+.stat-or img{
+  width: 35px;
+  height: 35px;
+}
+.stat-or h3{
+  font-family: YekanBakhMedium;
+  font-size: 2rem;
+}
+.stat-or p{
+  font-family: YekanBakhMedium;
+  font-size: 1.2rem;
 }
 
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+}
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc((100% - 330px));
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.social-media p {
+  font-family: YekanBakhHeavy;
+  font-size: 1.3rem;
+  color: #303030;
+}
+
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.footer-links p {
+  font-size: 1.3rem;
+  font-family: YekanBakhHeavy;
+  margin-top: 15px;
+  color: #303030;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: iranyekanwebmedium;
+  color: #000;
+}
+
+.footer-links li {
+  padding: 8px 0;
+}
 
 
 
@@ -558,6 +645,14 @@ header{
   width:940px;
   padding: 20px 0 1px 0;
   margin: auto;
+}
+.stat-list{  
+  width: 940px; 
+  display: flex;
+  margin: auto;
+}
+footer {
+  width: 940px;
 }
  
 
@@ -665,6 +760,22 @@ header{
   width:auto;
   margin: 0;
   padding: 0;
+}
+.stat-list{  
+  width: auto; 
+  display: flex;
+  margin: auto;
+}
+footer {
+  flex-direction: column;
+  width: calc(100% - 60px);
+}
+footer .footer-links {
+  width: 100%;
+}
+
+footer .social-media {
+  padding: 0 10px;
 }
 
 }
@@ -787,6 +898,24 @@ header{
   margin: 0;
   padding: 0;
 }
+.stat-or h3{ 
+  font-size: 1.8rem; 
+}
+.stat-or p{
+  font-size: 0.9rem;
+}
+footer .footer-links {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer-links div {
+  margin-top: 25px;
+}
+
+footer {
+  width: calc(100% - 120px);
+  margin: 0 60px;
+}
  
  
 }
@@ -814,6 +943,14 @@ header{
     .container-text{
       text-align: center;
       width: 500px;
+    }
+    footer {
+      width: calc(100% - 60px);
+      margin: 0 30px;
+    }
+    .footer-links p,
+    .footer-links a {
+      font-size: 0.9rem;
     }
 
 }
